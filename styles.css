@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #5f2a2a;
     background-color: white;
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ nav ul {
 }
 
 nav ul li {
-    float: left;
+    float: right;
 }
 
 nav ul li a {
@@ -42,7 +42,7 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #28921a;
     color: white;
     text-align: center;
     padding: 10px;
@@ -50,3 +50,26 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.visuals-section {
+    text-align: center;
+}
+
+.gallery, .video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item, .video-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
